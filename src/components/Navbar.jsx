@@ -1,11 +1,11 @@
 
 import { useState, useEffect } from 'react';
-import Container from 'react-bootstrap/Container';
+
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 
-function Navbar() {
+function Navbarcomp() {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled,setScrolled]= useState(false);
 
@@ -25,7 +25,7 @@ function Navbar() {
 
     return (
         <Navbar expand="lg" className={scrolled? "scrolled": ""}>
-            <Container>
+            
                 <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
@@ -35,19 +35,15 @@ function Navbar() {
                         <Nav.Link href="#projects"className={activeLink === 'projects'? 'active navbar-link': 'navbar-link'} onClick={()=>onUpdateActiveLink('projects')}>Projects</Nav.Link>
                     </Nav>
                     <span className='navbar-text'>
-                        <div className='social-icon'>
-                            <a href='#'><img src={...} alt="" /></a>
-                            <a href='#'><img src={...} alt="" /></a>
-                            <a href='#'><img src={...} alt="" /></a>
-                        </div>
+                       
                         <button onClick={() => console.log("Connect")}><span>Lets connect</span></button>
                        
                     </span>
                     
         </Navbar.Collapse>
-        </Container >
+       
         </Navbar>
     );
 }
 
-export default Navbar;
+export default Navbarcomp;
