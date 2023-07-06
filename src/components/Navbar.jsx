@@ -5,6 +5,9 @@ import Logo from '../images/logo-mirella.jpg';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
+import { SocialIcon } from 'react-social-icons';
+
+
 
 function Navbarcomp() {
     const [activeLink, setActiveLink] = useState('home');
@@ -38,7 +41,10 @@ function Navbarcomp() {
                         <Nav.Link href="#projects"className={activeLink === 'projects'? 'active navbar-link': 'navbar-link'} onClick={()=>onUpdateActiveLink('projects')}>Projects</Nav.Link>
                     </Nav>
                     <span className='navbar-text'>
-                       
+                 
+                         
+                         <SocialIcon url="https://www.linkedin.com/in/mirella-dimichino-823600254"  />
+                        
                         <button onClick={() => console.log("Connect")}><span>Lets connect</span></button>
                        
                     </span>
