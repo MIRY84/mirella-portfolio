@@ -17,9 +17,9 @@ html{
 
 
 nav.navbar {
-
+  
   top: 0;
-  padding: 20px 0;
+  padding: 20px 10;
   position: absolute;
   width: 100%;
   
@@ -37,6 +37,8 @@ align-items: center;
 font-weight: 400;
 font-size: 20px;
 padding: 0 25px;
+
+
 letter-spacing: 10px;
 opacity: 0.75;
 }
@@ -48,13 +50,19 @@ body{
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
+  font-family: fantasy;
  
 }
 span{
+  display: flex;
   font-family: fantasy;
   font-size: 20px;
-  padding: 0 25px;
-  letter-spacing: 5px;
+ 
+  letter-spacing: 10px;
+}
+img{
+  width: 150px;
+ 
 }
 
 

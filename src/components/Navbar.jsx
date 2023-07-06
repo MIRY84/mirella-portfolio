@@ -28,7 +28,7 @@ function Navbarcomp() {
         <Navbar expand="lg" className={scrolled? "scrolled": ""}>
             
                 <Navbar.Brand href="#home">
-                    <img src={Logo} width={200}alt='logo' />
+                    <img src={Logo}   alt='logo' />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
