@@ -8,6 +8,7 @@
 
 html{
   scroll-behavior: smooth;
+  scroll-padding-top: 75px;
 }
 
 
@@ -30,6 +31,7 @@ nav.navbar.scrolled{
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
+font-family: fantasy;
 display: flex;
 align-items: center;
 font-weight: 400;
@@ -41,6 +43,18 @@ opacity: 0.75;
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link:active {
   opacity: 1;
+}
+body{
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+ 
+}
+span{
+  font-family: fantasy;
+  font-size: 20px;
+  padding: 0 25px;
+  letter-spacing: 5px;
 }
 
 
