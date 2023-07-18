@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
 
 html{
@@ -45,12 +46,14 @@ opacity: 0.75;
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link:active {
   opacity: 1;
+  
 }
 body{
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
   font-family: fantasy;
+
  
 }
 span{
@@ -64,6 +67,8 @@ img{
   width: 150px;
  
 }
+
+
 
 
 
