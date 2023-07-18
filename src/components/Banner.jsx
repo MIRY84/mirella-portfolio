@@ -48,13 +48,13 @@ export default function Banner() {
     <section className='banner' id="home">
       <Container>
         <Row className='align-items-center'>
-          <Col xs={12} md={6} xl={7}>
+          <Col xs={9} >
             <span className='tagline'>Welcome to my Portfolio</span>
             <h1>{`Hi I am Mirella Dimichino`}<span className='wrap'>{text}</span></h1>
             <p>Passionate Developer with a background in hospitality</p>
             <button onClick={() => console.log('connect')}>Lets connect <ArrowRightCircle size={25} /></button>
           </Col>
-          <Col xs={12} md={6} xl={5}>
+          <Col xs={3} >
             <img src={headerImg} alt="header img" />
 
           </Col>

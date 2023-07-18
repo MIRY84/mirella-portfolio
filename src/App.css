@@ -69,6 +69,31 @@ img{
 }
 
 
+ .tagline {
+  font-weight: 200;
+  letter-spacing: 0.1px;
+  margin-top: 0%;
+  display: flex;
+  font-size: 20px;
+  padding-top: 0%;
+}
+.banner img{
+  animation: updown 2s linear infinite;
+  width: 300px;
+}
+@keyframes updown{
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+
 
 
 
