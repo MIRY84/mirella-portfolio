@@ -6,6 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 import { SocialIcon } from 'react-social-icons';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -36,9 +37,9 @@ function Navbarcomp() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#home" className={activeLink === 'home'? 'active navbar-link': 'navbar-link'} onClick={()=>onUpdateActiveLink('home')}>Home</Nav.Link>
-                        <Nav.Link href="#skills" className={activeLink === 'skills'? 'active navbar-link': 'navbar-link'} onClick={()=>onUpdateActiveLink('skills')}>Skills</Nav.Link>
-                        <Nav.Link href="#projects"className={activeLink === 'projects'? 'active navbar-link': 'navbar-link'} onClick={()=>onUpdateActiveLink('projects')}>Projects</Nav.Link>
+                        <NavLink to="/" className={activeLink === 'home'? 'active navbar-link': 'navbar-link'} onClick={()=>onUpdateActiveLink('home')}>Home</NavLink>
+                        <NavLink to="/skills" className={activeLink === 'skills'? 'active navbar-link': 'navbar-link'} onClick={()=>onUpdateActiveLink('skills')}>Skills</NavLink>
+                        <NavLink to="/projects"className={activeLink === 'projects'? 'active navbar-link': 'navbar-link'} onClick={()=>onUpdateActiveLink('projects')}>Projects</NavLink>
                     </Nav>
                     <span className='navbar-text'>
                  

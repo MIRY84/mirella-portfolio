@@ -6,17 +6,26 @@ import Navbar from "./components/Navbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Banner from './components/Banner';
 import Skills from './components/Skills';
+import { Routes, Route, Router } from 'react-router-dom';
+import Home from './components/Home';
+import Projects from './components/Projects';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
+      
         <Navbar />
-        <Banner />
-        <Skills />
-      </div>
+       
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/projects" element={<Projects />} />
+
+        </Routes>
+       
+      
       
     </>
   )
